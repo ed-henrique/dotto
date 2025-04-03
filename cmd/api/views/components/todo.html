@@ -1,0 +1,9 @@
+{{ define "todo" }}
+<article>
+  <h2>{{ .Name }}</h2>
+  <form action="/todos/{{ .ID }}">
+    <input type="checkbox">
+    <input type="checkbox">
+  </form>
+</article>
+{{ end }}
